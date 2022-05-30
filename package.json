@@ -1,0 +1,9 @@
+{
+  "name": "sgmf-ui-workspace",
+  "author": "Seegene Medical Foundation",
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "UNLICENSED",
+  "private": true
+}
