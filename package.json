@@ -4,6 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "storybook": "npm run storybook -w ./packages/storybook/ --no-manager-cache"
+  },
   "license": "UNLICENSED",
   "private": true
 }
