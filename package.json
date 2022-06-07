@@ -5,7 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "storybook": "npm run storybook -w ./packages/storybook/ --no-manager-cache"
+    "storybook": "npm run storybook -w ./packages/storybook/ --no-manager-cache",
+    "build:ui": "npm run build -w ./packages/sgmf-ui/",
+    "publish:ui": "npm publish -w ./packages/sgmf-ui/"
   },
   "license": "UNLICENSED",
   "private": true
