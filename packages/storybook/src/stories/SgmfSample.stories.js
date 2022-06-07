@@ -1,4 +1,4 @@
-import { SgmfSample } from 'sgmf-ui';
+import { SgmfSample } from '@sgmf/ui';
 export default {
   title: 'Example/SGMF Sample',
   component: SgmfSample,
