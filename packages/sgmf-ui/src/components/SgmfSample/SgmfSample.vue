@@ -1,5 +1,5 @@
 <template>
-  <div>SGMF Sample1111</div>
+  <div>111</div>
 </template>
 
 <script>
