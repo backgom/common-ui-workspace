@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  mode: import.meta.env?.PROD ? 'production' : 'development',
   plugins: [vue()],
   resolve: {
     alias: {
