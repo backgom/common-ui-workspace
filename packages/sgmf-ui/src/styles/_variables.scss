@@ -1,0 +1,14 @@
+// Place SASS variable overrides here
+$font-size-root: 40px;
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  color: $primary-color;
+  font-size: $font-size-root;
+}
+
+.font {
+  font-size: $font-size-root;
+}
+

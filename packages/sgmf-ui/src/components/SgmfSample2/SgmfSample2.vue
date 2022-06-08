@@ -13,4 +13,8 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/styles/_variables.scss';
+
+::placeholder {
+  color: gray;
+}
 </style>

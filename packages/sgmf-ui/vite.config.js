@@ -3,6 +3,9 @@ import { fileURLToPath, URL } from 'url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 
+import importCss from 'postcss-import';
+import autoprefixer from 'autoprefixer';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   mode: import.meta.env?.PROD ? 'production' : 'development',
@@ -12,6 +15,11 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  css: {
+    postcss: {
+      plugins: [importCss(), autoprefixer()],
+    },
+  },
   build: {
     // lib: {
     //   // eslint-disable-next-line no-undef
@@ -19,6 +27,7 @@ export default defineConfig({
     //   name: 'SgmfUiComponents',
     //   fileName: (format) => `sgmf-ui-components.${format}.js`,
     // },
+    cssCodeSplit: false,
     rollupOptions: {
       input: './src/index.js',
       // make sure to externalize deps that shouldn't be bundled
@@ -33,6 +42,13 @@ export default defineConfig({
         // inlineDynamicImports: true,
         entryFileNames: 'index.js',
         preserveModules: true,
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === 'style.css') {
+            return 'assets/[name][extname]';
+          }
+
+          return 'assets/[name].[hash][extname]';
+        },
       },
       preserveEntrySignatures: 'strict',
     },

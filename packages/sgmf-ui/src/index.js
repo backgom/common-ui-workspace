@@ -8,4 +8,5 @@ const sgmfUiComponentPlugin = {
 export default sgmfUiComponentPlugin;
 
 import SgmfSample from '@/components/SgmfSample/SgmfSample.vue';
-export { SgmfSample };
+import SgmfSample2 from '@/components/SgmfSample2/SgmfSample2.vue';
+export { SgmfSample, SgmfSample2 };
