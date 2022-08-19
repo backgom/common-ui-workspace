@@ -1,14 +1,14 @@
 {
-  "name": "sgmf-ui-workspace",
-  "author": "Seegene Medical Foundation",
+  "name": "sample-ui-workspace",
+  "author": "Sunghyeon Park",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "storybook": "npm run storybook -w ./packages/storybook/",
-    "build:ui": "npm run build:production -w ./packages/sgmf-ui/",
-    "publish:ui": "npm version patch -w ./packages/sgmf-ui/ && npm publish -w ./packages/sgmf-ui/",
-    "watch:ui": "npm run watch -w ./packages/sgmf-ui/"
+    "build:ui": "npm run build:production -w ./packages/common-ui/",
+    "publish:ui": "npm version patch -w ./packages/common-ui/ && npm publish -w ./packages/common-ui/",
+    "watch:ui": "npm run watch -w ./packages/common-ui/"
   },
   "license": "UNLICENSED",
   "private": true

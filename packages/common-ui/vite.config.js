@@ -24,8 +24,8 @@ export default defineConfig({
     // lib: {
     //   // eslint-disable-next-line no-undef
     //   entry: path.resolve(__dirname, 'src/index.js'),
-    //   name: 'SgmfUiComponents',
-    //   fileName: (format) => `sgmf-ui-components.${format}.js`,
+    //   name: 'CommonUiComponents',
+    //   fileName: (format) => `common-ui-components.${format}.js`,
     // },
     cssCodeSplit: false,
     rollupOptions: {

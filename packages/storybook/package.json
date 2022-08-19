@@ -1,5 +1,5 @@
 {
-  "name": "@sgmf/storybook",
+  "name": "@common/storybook",
   "version": "0.0.1",
   "scripts": {
     "serve": "vite preview",

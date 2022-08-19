@@ -1,4 +1,4 @@
-import '@sgmf/ui/style';
+import '@common/ui/style';
 import { loadFonts } from '@/plugins/webfontloader';
 import vuetify from '@/plugins/vuetify';
 

@@ -1166,6 +1166,20 @@
   "resolved" "http://localhost:4873/@colors%2fcolors/-/colors-1.5.0.tgz"
   "version" "1.5.0"
 
+"@common/storybook@file:/Users/backgom/Developer/seegene/sample/sgmf-ui-workspace/packages/storybook":
+  "resolved" "file:packages/storybook"
+  "version" "0.0.1"
+  dependencies:
+    "@mdi/font" "5.9.55"
+    "roboto-fontface" "*"
+    "vue" "^3.2.37"
+    "vuetify" "^3.0.0-beta.0"
+    "webfontloader" "^1.0.0"
+
+"@common/ui@file:/Users/backgom/Developer/seegene/sample/sgmf-ui-workspace/packages/common-ui":
+  "resolved" "file:packages/common-ui"
+  "version" "0.0.1"
+
 "@cypress/request@^2.88.10":
   "integrity" "sha512-Zp7F+R93N0yZyG34GutyTNr+okam7s/Fzc1+i3kcqOP8vk6OuajuE9qZJ6Rs+10/1JFtXFYMdyarnU1rZuJesg=="
   "resolved" "http://localhost:4873/@cypress%2frequest/-/request-2.88.10.tgz"
@@ -1515,20 +1529,6 @@
   "integrity" "sha512-WiBSI6JBIhC6LRIsB2Kwh8DsGTlbBU+mLRxJmAe3LjHTdkDpwIbEOZgoXBbZilk/vlfjK8i6nKRAvIRn1XaIMw=="
   "resolved" "http://localhost:4873/@rushstack%2feslint-patch/-/eslint-patch-1.1.3.tgz"
   "version" "1.1.3"
-
-"@sgmf/storybook@file:/Users/backgom/Developer/seegene/sample/sgmf-ui-workspace/packages/storybook":
-  "resolved" "file:packages/storybook"
-  "version" "0.0.1"
-  dependencies:
-    "@mdi/font" "5.9.55"
-    "roboto-fontface" "*"
-    "vue" "^3.2.37"
-    "vuetify" "^3.0.0-beta.0"
-    "webfontloader" "^1.0.0"
-
-"@sgmf/ui@file:/Users/backgom/Developer/seegene/sample/sgmf-ui-workspace/packages/sgmf-ui":
-  "resolved" "file:packages/sgmf-ui"
-  "version" "0.0.1"
 
 "@sideway/address@^4.1.3":
   "integrity" "sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw=="
@@ -3415,19 +3415,7 @@
   "resolved" "http://localhost:4873/atob/-/atob-2.1.2.tgz"
   "version" "2.1.2"
 
-"autoprefixer@^10.4.7":
-  "integrity" "sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA=="
-  "resolved" "http://localhost:4873/autoprefixer/-/autoprefixer-10.4.7.tgz"
-  "version" "10.4.7"
-  dependencies:
-    "browserslist" "^4.20.3"
-    "caniuse-lite" "^1.0.30001335"
-    "fraction.js" "^4.2.0"
-    "normalize-range" "^0.1.2"
-    "picocolors" "^1.0.0"
-    "postcss-value-parser" "^4.2.0"
-
-"autoprefixer@^9.8.6":
+"autoprefixer@^10.4.7", "autoprefixer@^9.8.6":
   "integrity" "sha512-eM9d/swFopRt5gdJ7jrpCwgvEMIayITpojhkkSMRsFHYuH5bkSQ4p/9qTEHtmNudUZh22Tehu7I6CxAW0IXTKA=="
   "resolved" "https://registry.npmjs.org/autoprefixer/-/autoprefixer-9.8.8.tgz"
   "version" "9.8.8"
@@ -3798,16 +3786,15 @@
   dependencies:
     "pako" "~1.0.5"
 
-"browserslist@^4.12.0", "browserslist@^4.20.2", "browserslist@^4.20.3":
-  "integrity" "sha512-NBhymBQl1zM0Y5dQT/O+xiLP9/rzOIQdKM/eMJBAq7yBgaB6krIYLGejrwVYnSHZdqjscB1SPuAjHwxjvN6Wdg=="
-  "resolved" "http://localhost:4873/browserslist/-/browserslist-4.20.3.tgz"
-  "version" "4.20.3"
+"browserslist@^4.12.0", "browserslist@^4.20.2", "browserslist@^4.20.3", "browserslist@^4.21.3", "browserslist@>= 4.21.0":
+  "integrity" "sha512-898rgRXLAyRkM1GryrrBHGkqA5hlpkV5MhtZwg9QXeiyLUYs2k00Un05aX5l2/yJIOObYKOpS2JNo8nJDE7fWQ=="
+  "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.21.3.tgz"
+  "version" "4.21.3"
   dependencies:
-    "caniuse-lite" "^1.0.30001332"
-    "electron-to-chromium" "^1.4.118"
-    "escalade" "^3.1.1"
-    "node-releases" "^2.0.3"
-    "picocolors" "^1.0.0"
+    "caniuse-lite" "^1.0.30001370"
+    "electron-to-chromium" "^1.4.202"
+    "node-releases" "^2.0.6"
+    "update-browserslist-db" "^1.0.5"
 
 "bser@2.1.1":
   "integrity" "sha512-gQxTNE/GAfIIrmHLUE3oJyp5FO6HRBfhjnw4/wMmA63ZGDJnWBmgY/lyQBpnDUkGmAhbSe39tx2d/iTOAfglwQ=="
@@ -4000,10 +3987,10 @@
   "resolved" "https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz"
   "version" "6.3.0"
 
-"caniuse-lite@^1.0.30001109", "caniuse-lite@^1.0.30001332", "caniuse-lite@^1.0.30001335":
-  "integrity" "sha512-0ZFjnlCaXNOAYcV7i+TtdKBp0L/3XEU2MF/x6Du1lrh+SRX4IfzIVL4HNJg5pB2PmFb8rszIGyOvsZnqqRoc2g=="
-  "resolved" "http://localhost:4873/caniuse-lite/-/caniuse-lite-1.0.30001344.tgz"
-  "version" "1.0.30001344"
+"caniuse-lite@^1.0.30001109", "caniuse-lite@^1.0.30001370", "caniuse-lite@^1.0.30001373":
+  "integrity" "sha512-JVQnfoO7FK7WvU4ZkBRbPjaot4+YqxogSDosHv0Hv5mWpUESmN+UubMU6L/hGz8QlQ2aY5U0vR6MOs6j/CXpNA=="
+  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001378.tgz"
+  "version" "1.0.30001378"
 
 "capture-exit@^2.0.0":
   "integrity" "sha512-PiT/hQmTonHhl/HFGN+Lx3JJUznrVYJ3+AQsnthneZbvW7x+f08Tk7yLJTLEOUvBTbduLeeBkxEaYXUOUrRq6g=="
@@ -5069,10 +5056,10 @@
   "resolved" "http://localhost:4873/ee-first/-/ee-first-1.1.1.tgz"
   "version" "1.1.1"
 
-"electron-to-chromium@^1.4.118":
-  "integrity" "sha512-ea8Q1YX0JRp4GylOmX4gFHIizi0j9GfRW4EkaHnkZp0agRCBB4ZGeCv17IEzIvBkiYVwfoKVhKZJbTfqCRdQdg=="
-  "resolved" "http://localhost:4873/electron-to-chromium/-/electron-to-chromium-1.4.142.tgz"
-  "version" "1.4.142"
+"electron-to-chromium@^1.4.202":
+  "integrity" "sha512-ICHvGaCIQR3P88uK8aRtx8gmejbVJyC6bB4LEC3anzBrIzdzC7aiZHY4iFfXhN4st6I7lMO0x4sgBHf/7kBvRw=="
+  "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.225.tgz"
+  "version" "1.4.225"
 
 "elliptic@^6.5.3":
   "integrity" "sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ=="
@@ -8393,10 +8380,10 @@
     "util" "^0.11.0"
     "vm-browserify" "^1.0.1"
 
-"node-releases@^2.0.3":
-  "integrity" "sha512-U9h1NLROZTq9uE1SNffn6WuPDg8icmi3ns4rEl/oTfIle4iLjTliCzgTsbaIFMq/Xn078/lfY/BL0GWZ+psK4Q=="
-  "resolved" "http://localhost:4873/node-releases/-/node-releases-2.0.5.tgz"
-  "version" "2.0.5"
+"node-releases@^2.0.6":
+  "integrity" "sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg=="
+  "resolved" "https://registry.npmjs.org/node-releases/-/node-releases-2.0.6.tgz"
+  "version" "2.0.6"
 
 "normalize-package-data@^2.3.2", "normalize-package-data@^2.3.4", "normalize-package-data@^2.5.0":
   "integrity" "sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA=="
@@ -9172,12 +9159,7 @@
   dependencies:
     "fast-diff" "^1.1.2"
 
-"prettier@^2.5.1":
-  "integrity" "sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew=="
-  "resolved" "http://localhost:4873/prettier/-/prettier-2.6.2.tgz"
-  "version" "2.6.2"
-
-"prettier@>= 2.0.0", "prettier@>=2.0.0", "prettier@>=2.2.1 <=2.3.0":
+"prettier@^2.5.1", "prettier@>= 2.0.0", "prettier@>=2.0.0", "prettier@>=2.2.1 <=2.3.0":
   "integrity" "sha512-kXtO4s0Lz/DW/IJ9QdWhAf7/NmPWQXkFr/r/WkR3vyI+0v8amTDxiaQSLzs8NBlytfLWX/7uQUMIW677yLKl4w=="
   "resolved" "http://localhost:4873/prettier/-/prettier-2.3.0.tgz"
   "version" "2.3.0"
@@ -11523,6 +11505,14 @@
   "integrity" "sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w=="
   "resolved" "http://localhost:4873/upath/-/upath-2.0.1.tgz"
   "version" "2.0.1"
+
+"update-browserslist-db@^1.0.5":
+  "integrity" "sha512-dteFFpCyvuDdr9S/ff1ISkKt/9YZxKjI9WlRR99c180GaztJtRa/fn18FdxGVKVsnPY7/a/FDN68mcvUmP4U7Q=="
+  "resolved" "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.0.5.tgz"
+  "version" "1.0.5"
+  dependencies:
+    "escalade" "^3.1.1"
+    "picocolors" "^1.0.0"
 
 "uri-js@^4.2.2":
   "integrity" "sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg=="
