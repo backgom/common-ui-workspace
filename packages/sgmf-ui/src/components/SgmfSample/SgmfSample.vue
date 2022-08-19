@@ -1,15 +1,8 @@
 <template>
-  <div class="font">111</div>
+  <div class="font">222</div>
 </template>
 
-<script>
-export default {
-  name: 'SgmfSample',
-  setup() {
-    return {};
-  },
-};
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 @import '@/styles/_variables.scss';

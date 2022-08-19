@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "storybook": "npm run storybook -w ./packages/storybook/",
-    "build:ui": "npm run build -w ./packages/sgmf-ui/",
+    "build:ui": "npm run build:production -w ./packages/sgmf-ui/",
     "publish:ui": "npm version patch -w ./packages/sgmf-ui/ && npm publish -w ./packages/sgmf-ui/",
     "watch:ui": "npm run watch -w ./packages/sgmf-ui/"
   },
